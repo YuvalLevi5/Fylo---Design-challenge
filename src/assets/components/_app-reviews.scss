@@ -1,0 +1,101 @@
+.app-reviews-container {
+    width: 100%;
+    .quotes-img {
+        height: 21px;
+        width: 32px;
+    }
+    display: flex;
+    // grid-template-columns: 1fr;
+    justify-content: center;
+    align-content: center;
+
+    .reviews-container {
+
+        margin-bottom: 300px;
+
+        .review-container {
+            width: 280px;
+            height: 160px;
+            box-shadow: 0 0 8px 4px rgba(56, 56, 56, 0.05);
+            border-radius: 4px;
+            background-color: #202a3c;
+            padding: 24px 20px 20px 20px;
+
+            .review-txt {
+                color: #ffffff;
+                font-family: "Open Sans";
+                font-size: 10px;
+                font-weight: 400;
+                font-style: normal;
+                letter-spacing: normal;
+                line-height: 18px;
+                text-align: left;
+            }
+
+            .user-details {
+                padding-top: 20px;
+
+                .user-profile {
+                    width: 24px;
+                    height: 24px;
+                    border-radius: 50%;
+                }
+
+                .user-name {
+                    color: #ffffff;
+                    font-family: "Open Sans";
+                    font-size: 10px;
+                    font-weight: 700;
+                    font-style: normal;
+                    letter-spacing: 0.5px;
+                    line-height: 12px;
+                    text-align: left;
+                    margin-bottom: 4px;
+
+                }
+
+                .user-job {
+                    color: #ffffff;
+                    font-family: "Open Sans";
+                    font-size: 7px;
+                    font-weight: 400;
+                    font-style: normal;
+                    letter-spacing: 0.5px;
+                    line-height: 10px;
+                    text-align: left;
+                    font-style: normal;
+                    letter-spacing: normal;
+                    line-height: normal;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .app-reviews-container {
+        .reviews-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+
+            .review-container {
+                max-width: unset;
+                height: fit-content;
+
+                .review-txt {
+                    font-size: 14px;
+                    line-height: 21px;
+                }
+
+                .user-details {
+                    padding-top: 28px;
+
+                    .user-job {
+                        font-size: 8px;
+                    }
+                }
+            }
+        }
+    }
+
+}

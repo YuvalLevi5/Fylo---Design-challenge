@@ -1,0 +1,42 @@
+@import 'setup/functions';
+@import 'setup/variables';
+@import 'setup/_utils.scss';
+
+//  BASE
+@import 'base/_fonts.scss';
+
+
+// COMPONENTS
+@import 'components/_app-header.scss';
+@import 'components/_app-hero.scss';
+@import 'components/_app-start.scss';
+@import 'components/_app-info.scss';
+@import 'components/_app-more-info.scss';
+@import 'components/_app-reviews.scss';
+@import 'components/_app-footer.scss';
+@import 'components/_signup-modal.scss';
+
+
+.main-app {
+    background-color: hsl(217, 28%, 15%);
+}
+
+.main-layout {
+    width: 320px;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.full{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media screen and (min-width: 800px) {
+    .main-layout {
+        width: 720px;
+    }
+  }
+  

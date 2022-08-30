@@ -1,0 +1,48 @@
+.info-container {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    .info {
+        // width: 100%;
+        margin-top: 50px;
+
+        .info-img {
+            width: 70px;
+            height: 60px;
+            object-fit: contain;
+        }
+
+        .info-header {
+            color: #ffffff;
+            font-family: Raleway;
+            font-size: 18px;
+            font-weight: 700;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 24px;
+            text-align: center;
+            margin-top: 33px;
+        }
+
+        .info-txt {
+            color: #ffffff;
+            font-family: Open Sans;
+            font-size: 14px;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 21px;
+            text-align: center;
+            margin-top: 8px;
+        }
+    }
+
+}
+
+
+@media screen and (min-width: 800px) {
+    .info-container{
+        grid-template-columns: 1fr 1fr;
+        gap: 100px;
+    }
+}

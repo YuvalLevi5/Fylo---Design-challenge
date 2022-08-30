@@ -1,0 +1,40 @@
+.app-hero-container {
+    width: 100%;
+    // background-image: url(../images/bg-curvy-mobile.svg);
+    // background-repeat: no-repeat;
+    // background-position: center bottom;
+    // background-size: cover;
+
+    .hero-img {
+        width: 300px;
+        height: 200px;
+        margin: 48px 8px 33px 8px;
+    }
+
+    .hero-txt {
+        color: #ffffff;
+        font-family: Raleway;
+        font-size: 24px;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 36px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .app-hero-container {
+        .hero-img {
+            /* Style for "illustrati" */
+            width: 720px;
+            height: 534px;
+        }
+
+        .hero-txt {
+            font-size: 40px;
+            line-height: 60px;
+        }
+    }
+}
+

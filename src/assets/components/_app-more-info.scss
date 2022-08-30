@@ -1,0 +1,81 @@
+.more-info-container {
+    width: 320px;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .info-img {
+        width: 300px;
+        height: 200px;
+        margin: 48px 8px 33px 8px;
+    }
+
+    .app-more-info-container {
+        gap: 16px;
+
+
+        .info-title {
+            width: 292px;
+            height: 24px;
+            color: #ffffff;
+            font-family: Raleway;
+            font-size: 18px;
+            font-weight: 700;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 24px;
+            text-align: center;
+        }
+
+        .info-txt {
+            /* Style for "Never let" */
+            width: 320px;
+            height: 62px;
+            color: #ffffff;
+            font-family: "Open Sans";
+            font-size: 14px;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 21px;
+        }
+
+        .link-fylo {
+            color: #62e0d9;
+            font-family: "Open Sans";
+            font-size: 12px;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: normal;
+            text-align: left;
+            width: 140px;
+            border-bottom: 2px solid #62e0d9;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+
+            .arrow-img {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+    .more-info-container {
+        width: 100%;
+        flex-direction: row;
+
+        .info-img {
+            width: 615px;
+            height: 464px;
+        }
+
+        .app-more-info-container{
+            justify-content: center;
+        }
+    }
+}
